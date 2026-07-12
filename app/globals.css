@@ -18,7 +18,8 @@ section{padding:5.5rem 0}
 .btn.ghost:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 .reveal{opacity:0;transform:translateY(24px);transition:.7s}.reveal.in{opacity:1;transform:none}
 .imgph{background:linear-gradient(135deg,#d8cdba,#c2ab8c);position:relative;overflow:hidden}
-.imgph::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.25),transparent 60%)}
+.imgph>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;transition:transform .5s}
+.imgph .price,.imgph .badge{z-index:2}
 
 /* nav */
 header.nav{position:sticky;top:0;z-index:99;background:rgba(246,241,233,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}

@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 const WEB3FORMS_KEY = '8934ee71-1c5c-4898-89ce-d7ef181933be';
 const SITE_NAME = 'Nestable';
+const hideImg = (e) => { e.currentTarget.style.display = 'none'; };
 export default function Page() {
   useEffect(() => {
     const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.12 });
@@ -42,7 +43,7 @@ export default function Page() {
         <div className="stat-row"><div className="st"><b>12k+</b><span>Verified listings</span></div><div className="st"><b>48</b><span>Metros covered</span></div><div className="st"><b>4.9★</b><span>Mover rating</span></div></div>
       </div>
       <div className="hero-art">
-        <div className="main imgph"></div>
+        <div className="main imgph"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1000&q=80" alt="Modern home exterior" loading="lazy" onError={hideImg} /></div>
         <div className="badge"><b>$512,000</b><span>Sunset Loft · Downtown</span></div>
       </div>
     </div></div></section>
@@ -67,7 +68,7 @@ export default function Page() {
           <ul><li>Verified, up-to-date rentals</li><li>Instant viewing bookings</li><li>Online applications</li><li>Saved searches &amp; alerts</li></ul>
           <div className="card-chat"><div className="l"><span className="who">You:</span> Any 2-beds near downtown under $2k?</div><div className="l"><span className="who">Nestable:</span> 6 matches, 2 open today. Book one?</div><div className="tag">✦ Viewing booked · confirmed</div></div>
         </div>
-        <div className="art imgph"></div>
+        <div className="art imgph"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1000&q=80" alt="Bright apartment interior" loading="lazy" onError={hideImg} /></div>
       </div>
     </div></section>
     
@@ -77,16 +78,16 @@ export default function Page() {
           <ul><li>Professional listing page</li><li>Pricing guidance</li><li>Qualified buyer leads</li><li>Offer management</li></ul>
           <div className="card-chat"><div className="l"><span className="who">Nestable:</span> Your listing is live with 3 saved buyers.</div><div className="l"><span className="who">You:</span> How do viewings work?</div><div className="l"><span className="who">Nestable:</span> They book your calendar. First is Saturday at noon.</div><div className="tag">✦ Listing live · 3 interested buyers</div></div>
         </div>
-        <div className="art imgph"></div>
+        <div className="art imgph"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1000&q=80" alt="House exterior with pool" loading="lazy" onError={hideImg} /></div>
       </div>
     </div></section>
     
     <section id="listings"><div className="wrap">
       <div className="sh reveal"><span className="eyebrow">On the market</span><h2>Featured listings</h2></div>
       <div className="listings reveal">
-        <div className="lc"><div className="ph imgph"><span className="price">$729,000</span></div><div className="body"><h3>The Willow House</h3><div className="addr">2418 Barton Hills Dr, Austin TX</div><div className="specs"><span><b>4</b> beds</span><span><b>3</b> baths</span><span><b>2,640</b> sqft</span></div></div></div>
-        <div className="lc"><div className="ph imgph"><span className="badge">Featured</span><span className="price">$1,485,000</span></div><div className="body"><h3>Cedar Creek Estate</h3><div className="addr">104 Cedar Creek Ln, Westlake TX</div><div className="specs"><span><b>5</b> beds</span><span><b>4.5</b> baths</span><span><b>4,380</b> sqft</span></div></div></div>
-        <div className="lc"><div className="ph imgph"><span className="price">$512,000</span></div><div className="body"><h3>Sunset Loft</h3><div className="addr">809 W 5th St #1204, Austin TX</div><div className="specs"><span><b>2</b> beds</span><span><b>2</b> baths</span><span><b>1,190</b> sqft</span></div></div></div>
+        <div className="lc"><div className="ph imgph"><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&q=80" alt="The Willow House" loading="lazy" onError={hideImg} /><span className="price">$729,000</span></div><div className="body"><h3>The Willow House</h3><div className="addr">2418 Barton Hills Dr, Austin TX</div><div className="specs"><span><b>4</b> beds</span><span><b>3</b> baths</span><span><b>2,640</b> sqft</span></div></div></div>
+        <div className="lc"><div className="ph imgph"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="Cedar Creek Estate" loading="lazy" onError={hideImg} /><span className="badge">Featured</span><span className="price">$1,485,000</span></div><div className="body"><h3>Cedar Creek Estate</h3><div className="addr">104 Cedar Creek Ln, Westlake TX</div><div className="specs"><span><b>5</b> beds</span><span><b>4.5</b> baths</span><span><b>4,380</b> sqft</span></div></div></div>
+        <div className="lc"><div className="ph imgph"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" alt="Sunset Loft" loading="lazy" onError={hideImg} /><span className="price">$512,000</span></div><div className="body"><h3>Sunset Loft</h3><div className="addr">809 W 5th St #1204, Austin TX</div><div className="specs"><span><b>2</b> beds</span><span><b>2</b> baths</span><span><b>1,190</b> sqft</span></div></div></div>
       </div>
     </div></section>
     
